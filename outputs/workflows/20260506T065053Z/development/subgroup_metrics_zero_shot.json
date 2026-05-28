@@ -1,0 +1,40 @@
+{
+  "background_noise_audible": {
+    "light_noise": {
+      "count": 58,
+      "accuracy": 0.9483,
+      "macro_f1": 0.9459,
+      "top_3_accuracy": 0.9655,
+      "human_review_rate": 0.0862,
+      "auto_accept_accuracy": 0.9623
+    },
+    "no_noise": {
+      "count": 17,
+      "accuracy": 0.8824,
+      "macro_f1": 0.4187,
+      "top_3_accuracy": 0.9412,
+      "human_review_rate": 0.0588,
+      "auto_accept_accuracy": 0.875
+    }
+  },
+  "audio_clipping": {
+    "no_clipping": {
+      "count": 75,
+      "accuracy": 0.9333,
+      "macro_f1": 0.9274,
+      "top_3_accuracy": 0.96,
+      "human_review_rate": 0.08,
+      "auto_accept_accuracy": 0.942
+    }
+  },
+  "quiet_speaker": {
+    "audible_speaker": {
+      "count": 75,
+      "accuracy": 0.9333,
+      "macro_f1": 0.9274,
+      "top_3_accuracy": 0.96,
+      "human_review_rate": 0.08,
+      "auto_accept_accuracy": 0.942
+    }
+  }
+}

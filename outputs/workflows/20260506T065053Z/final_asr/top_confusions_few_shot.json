@@ -1,0 +1,77 @@
+[
+  {
+    "ground_truth_label": "Internal pain",
+    "predicted_label": "Stomach ache",
+    "count": 5
+  },
+  {
+    "ground_truth_label": "Cough",
+    "predicted_label": "Hard to breath",
+    "count": 3
+  },
+  {
+    "ground_truth_label": "Emotional pain",
+    "predicted_label": "Heart hurts",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Foot ache",
+    "predicted_label": "Head ache",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Hard to breath",
+    "predicted_label": "Body feels weak",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Joint pain",
+    "predicted_label": "Injury from sports",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Joint pain",
+    "predicted_label": "Shoulder pain",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Shoulder pain",
+    "predicted_label": "Body feels weak",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Acne",
+    "predicted_label": "Body feels weak",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Acne",
+    "predicted_label": "Stomach ache",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Blurry vision",
+    "predicted_label": "Stomach ache",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Body feels weak",
+    "predicted_label": "Feeling dizzy",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Body feels weak",
+    "predicted_label": "Internal pain",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Cough",
+    "predicted_label": "Emotional pain",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Feeling dizzy",
+    "predicted_label": "Injury from sports",
+    "count": 1
+  }
+]

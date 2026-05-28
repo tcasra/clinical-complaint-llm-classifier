@@ -1,0 +1,570 @@
+{
+  "generated_at_utc": "2026-05-06T06:59:15.842312+00:00",
+  "plan": "full",
+  "workflow_root": "outputs/workflows/20260506T065053Z",
+  "resumed": false,
+  "stages": [
+    {
+      "stage": "development",
+      "run_dir": "outputs/workflows/20260506T065053Z/development",
+      "status": "completed",
+      "stop_reason": null,
+      "summary_file": "outputs/workflows/20260506T065053Z/development/summary.json",
+      "summary": {
+        "generated_at_utc": "2026-05-06T06:51:26.420819+00:00",
+        "run_status": "completed",
+        "stop_reason": null,
+        "split": "validate",
+        "transcript_source": "gold",
+        "methods_evaluated": [
+          "zero_shot",
+          "few_shot"
+        ],
+        "evaluated_examples": 75,
+        "prediction_rows": 150,
+        "missing_metadata_files": [],
+        "error_count": 0,
+        "clinical_label_mode": "closed_set_csv_prompt",
+        "allowed_clinical_label_count": 25,
+        "few_shot_pool_split": "train",
+        "few_shot_k": 4,
+        "bootstrap_samples": 300,
+        "review_policy": {
+          "confidence_threshold": 0.6,
+          "high_risk_confidence_threshold": 0.8,
+          "high_risk_labels": [
+            "Blurry vision",
+            "Hard to breath",
+            "Heart hurts",
+            "Infected wound",
+            "Internal pain"
+          ]
+        },
+        "stt_summary": null,
+        "method_metrics": {
+          "few_shot": {
+            "prediction_rows": 75,
+            "accuracy": 0.96,
+            "accuracy_ci_95": {
+              "lower": 0.92,
+              "upper": 0.9867
+            },
+            "macro_precision": 0.97,
+            "macro_recall": 0.96,
+            "macro_f1": 0.9589,
+            "macro_f1_ci_95": {
+              "lower": 0.8089,
+              "upper": 0.9822
+            },
+            "top_3_accuracy": 0.9733,
+            "average_confidence": 0.8893,
+            "human_review_rate": 0.0667,
+            "auto_accept_rate": 0.9333,
+            "auto_accept_accuracy": 0.9714,
+            "high_risk_review_rate": 0.0533,
+            "estimated_chat_cost": 0.125602,
+            "estimated_total_cost_if_run_alone": 0.125602,
+            "worst_labels_by_f1": [
+              {
+                "label": "Injury from sports",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              {
+                "label": "Joint pain",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              {
+                "label": "Neck pain",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              {
+                "label": "Body feels weak",
+                "support": 3,
+                "precision": 0.75,
+                "recall": 1.0,
+                "f1": 0.8571
+              },
+              {
+                "label": "Ear ache",
+                "support": 3,
+                "precision": 0.75,
+                "recall": 1.0,
+                "f1": 0.8571
+              }
+            ]
+          },
+          "zero_shot": {
+            "prediction_rows": 75,
+            "accuracy": 0.9333,
+            "accuracy_ci_95": {
+              "lower": 0.88,
+              "upper": 0.9867
+            },
+            "macro_precision": 0.95,
+            "macro_recall": 0.9333,
+            "macro_f1": 0.9274,
+            "macro_f1_ci_95": {
+              "lower": 0.7716,
+              "upper": 0.9596
+            },
+            "top_3_accuracy": 0.96,
+            "average_confidence": 0.8756,
+            "human_review_rate": 0.08,
+            "auto_accept_rate": 0.92,
+            "auto_accept_accuracy": 0.942,
+            "high_risk_review_rate": 0.0667,
+            "estimated_chat_cost": 0.115176,
+            "estimated_total_cost_if_run_alone": 0.115176,
+            "worst_labels_by_f1": [
+              {
+                "label": "Injury from sports",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.3333,
+                "f1": 0.5
+              },
+              {
+                "label": "Infected wound",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              {
+                "label": "Joint pain",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              {
+                "label": "Neck pain",
+                "support": 3,
+                "precision": 1.0,
+                "recall": 0.6667,
+                "f1": 0.8
+              },
+              {
+                "label": "Body feels weak",
+                "support": 3,
+                "precision": 0.75,
+                "recall": 1.0,
+                "f1": 0.8571
+              }
+            ]
+          }
+        },
+        "estimated_total_chat_cost": 0.240778,
+        "estimated_total_cost_for_this_run": 0.240778,
+        "stt_model": null,
+        "extraction_model": "anthropic/claude-haiku-4.5",
+        "artifact_files": {
+          "zero_shot": {
+            "confusion_matrix_csv": "confusion_matrix_zero_shot.csv",
+            "confusion_matrix_html": "confusion_matrix_zero_shot.html",
+            "per_class_metrics_json": "per_class_metrics_zero_shot.json",
+            "per_class_metrics_csv": "per_class_metrics_zero_shot.csv",
+            "subgroup_metrics_json": "subgroup_metrics_zero_shot.json",
+            "subgroup_metrics_csv": "subgroup_metrics_zero_shot.csv",
+            "top_confusions_json": "top_confusions_zero_shot.json"
+          },
+          "few_shot": {
+            "confusion_matrix_csv": "confusion_matrix_few_shot.csv",
+            "confusion_matrix_html": "confusion_matrix_few_shot.html",
+            "per_class_metrics_json": "per_class_metrics_few_shot.json",
+            "per_class_metrics_csv": "per_class_metrics_few_shot.csv",
+            "subgroup_metrics_json": "subgroup_metrics_few_shot.json",
+            "subgroup_metrics_csv": "subgroup_metrics_few_shot.csv",
+            "top_confusions_json": "top_confusions_few_shot.json"
+          }
+        }
+      }
+    },
+    {
+      "stage": "final_gold",
+      "run_dir": "outputs/workflows/20260506T065053Z/final_gold",
+      "status": "completed",
+      "stop_reason": null,
+      "summary_file": "outputs/workflows/20260506T065053Z/final_gold/summary.json",
+      "summary": {
+        "generated_at_utc": "2026-05-06T06:54:50.173538+00:00",
+        "run_status": "completed",
+        "stop_reason": null,
+        "split": "test",
+        "transcript_source": "gold",
+        "methods_evaluated": [
+          "zero_shot",
+          "few_shot"
+        ],
+        "evaluated_examples": 500,
+        "prediction_rows": 1000,
+        "missing_metadata_files": [],
+        "error_count": 0,
+        "clinical_label_mode": "closed_set_csv_prompt",
+        "allowed_clinical_label_count": 25,
+        "few_shot_pool_split": "train",
+        "few_shot_k": 4,
+        "bootstrap_samples": 300,
+        "review_policy": {
+          "confidence_threshold": 0.6,
+          "high_risk_confidence_threshold": 0.8,
+          "high_risk_labels": [
+            "Blurry vision",
+            "Hard to breath",
+            "Heart hurts",
+            "Infected wound",
+            "Internal pain"
+          ]
+        },
+        "stt_summary": null,
+        "method_metrics": {
+          "few_shot": {
+            "prediction_rows": 500,
+            "accuracy": 0.924,
+            "accuracy_ci_95": {
+              "lower": 0.902,
+              "upper": 0.946
+            },
+            "macro_precision": 0.9291,
+            "macro_recall": 0.924,
+            "macro_f1": 0.9231,
+            "macro_f1_ci_95": {
+              "lower": 0.8986,
+              "upper": 0.9437
+            },
+            "top_3_accuracy": 0.982,
+            "average_confidence": 0.9042,
+            "human_review_rate": 0.042,
+            "auto_accept_rate": 0.958,
+            "auto_accept_accuracy": 0.9374,
+            "high_risk_review_rate": 0.038,
+            "estimated_chat_cost": 0.840492,
+            "estimated_total_cost_if_run_alone": 0.840492,
+            "worst_labels_by_f1": [
+              {
+                "label": "Internal pain",
+                "support": 20,
+                "precision": 0.7059,
+                "recall": 0.6,
+                "f1": 0.6486
+              },
+              {
+                "label": "Shoulder pain",
+                "support": 20,
+                "precision": 0.76,
+                "recall": 0.95,
+                "f1": 0.8444
+              },
+              {
+                "label": "Joint pain",
+                "support": 20,
+                "precision": 1.0,
+                "recall": 0.75,
+                "f1": 0.8571
+              },
+              {
+                "label": "Muscle pain",
+                "support": 20,
+                "precision": 1.0,
+                "recall": 0.75,
+                "f1": 0.8571
+              },
+              {
+                "label": "Hard to breath",
+                "support": 20,
+                "precision": 0.7917,
+                "recall": 0.95,
+                "f1": 0.8636
+              }
+            ]
+          },
+          "zero_shot": {
+            "prediction_rows": 500,
+            "accuracy": 0.896,
+            "accuracy_ci_95": {
+              "lower": 0.87,
+              "upper": 0.918
+            },
+            "macro_precision": 0.9013,
+            "macro_recall": 0.896,
+            "macro_f1": 0.8922,
+            "macro_f1_ci_95": {
+              "lower": 0.8633,
+              "upper": 0.9129
+            },
+            "top_3_accuracy": 0.968,
+            "average_confidence": 0.8776,
+            "human_review_rate": 0.064,
+            "auto_accept_rate": 0.936,
+            "auto_accept_accuracy": 0.9167,
+            "high_risk_review_rate": 0.058,
+            "estimated_chat_cost": 0.771179,
+            "estimated_total_cost_if_run_alone": 0.771179,
+            "worst_labels_by_f1": [
+              {
+                "label": "Muscle pain",
+                "support": 20,
+                "precision": 0.9,
+                "recall": 0.45,
+                "f1": 0.6
+              },
+              {
+                "label": "Internal pain",
+                "support": 20,
+                "precision": 0.7333,
+                "recall": 0.55,
+                "f1": 0.6286
+              },
+              {
+                "label": "Shoulder pain",
+                "support": 20,
+                "precision": 0.6923,
+                "recall": 0.9,
+                "f1": 0.7826
+              },
+              {
+                "label": "Hard to breath",
+                "support": 20,
+                "precision": 0.7391,
+                "recall": 0.85,
+                "f1": 0.7907
+              },
+              {
+                "label": "Joint pain",
+                "support": 20,
+                "precision": 0.9333,
+                "recall": 0.7,
+                "f1": 0.8
+              }
+            ]
+          }
+        },
+        "estimated_total_chat_cost": 1.611671,
+        "estimated_total_cost_for_this_run": 1.611671,
+        "stt_model": null,
+        "extraction_model": "anthropic/claude-haiku-4.5",
+        "artifact_files": {
+          "zero_shot": {
+            "confusion_matrix_csv": "confusion_matrix_zero_shot.csv",
+            "confusion_matrix_html": "confusion_matrix_zero_shot.html",
+            "per_class_metrics_json": "per_class_metrics_zero_shot.json",
+            "per_class_metrics_csv": "per_class_metrics_zero_shot.csv",
+            "subgroup_metrics_json": "subgroup_metrics_zero_shot.json",
+            "subgroup_metrics_csv": "subgroup_metrics_zero_shot.csv",
+            "top_confusions_json": "top_confusions_zero_shot.json"
+          },
+          "few_shot": {
+            "confusion_matrix_csv": "confusion_matrix_few_shot.csv",
+            "confusion_matrix_html": "confusion_matrix_few_shot.html",
+            "per_class_metrics_json": "per_class_metrics_few_shot.json",
+            "per_class_metrics_csv": "per_class_metrics_few_shot.csv",
+            "subgroup_metrics_json": "subgroup_metrics_few_shot.json",
+            "subgroup_metrics_csv": "subgroup_metrics_few_shot.csv",
+            "top_confusions_json": "top_confusions_few_shot.json"
+          }
+        }
+      }
+    },
+    {
+      "stage": "final_asr",
+      "run_dir": "outputs/workflows/20260506T065053Z/final_asr",
+      "status": "completed",
+      "stop_reason": null,
+      "summary_file": "outputs/workflows/20260506T065053Z/final_asr/summary.json",
+      "summary": {
+        "generated_at_utc": "2026-05-06T06:59:15.789932+00:00",
+        "run_status": "completed",
+        "stop_reason": null,
+        "split": "test",
+        "transcript_source": "asr",
+        "methods_evaluated": [
+          "zero_shot",
+          "few_shot"
+        ],
+        "evaluated_examples": 500,
+        "prediction_rows": 1000,
+        "missing_metadata_files": [],
+        "error_count": 0,
+        "clinical_label_mode": "closed_set_csv_prompt",
+        "allowed_clinical_label_count": 25,
+        "few_shot_pool_split": "train",
+        "few_shot_k": 4,
+        "bootstrap_samples": 300,
+        "review_policy": {
+          "confidence_threshold": 0.6,
+          "high_risk_confidence_threshold": 0.8,
+          "high_risk_labels": [
+            "Blurry vision",
+            "Hard to breath",
+            "Heart hurts",
+            "Infected wound",
+            "Internal pain"
+          ]
+        },
+        "stt_summary": {
+          "evaluated_examples": 500,
+          "average_transcript_similarity": 0.9698,
+          "average_transcript_word_overlap": 0.8856,
+          "transcript_exact_match_rate": 0.618,
+          "estimated_stt_cost": 0.055633,
+          "stt_seconds_billed": 5006.94
+        },
+        "method_metrics": {
+          "few_shot": {
+            "prediction_rows": 500,
+            "accuracy": 0.89,
+            "accuracy_ci_95": {
+              "lower": 0.862,
+              "upper": 0.916
+            },
+            "macro_precision": 0.8993,
+            "macro_recall": 0.89,
+            "macro_f1": 0.8897,
+            "macro_f1_ci_95": {
+              "lower": 0.8602,
+              "upper": 0.9139
+            },
+            "top_3_accuracy": 0.946,
+            "average_confidence": 0.8789,
+            "human_review_rate": 0.062,
+            "auto_accept_rate": 0.938,
+            "auto_accept_accuracy": 0.9275,
+            "high_risk_review_rate": 0.028,
+            "estimated_chat_cost": 0.838841,
+            "estimated_total_cost_if_run_alone": 0.894474,
+            "worst_labels_by_f1": [
+              {
+                "label": "Internal pain",
+                "support": 20,
+                "precision": 0.7778,
+                "recall": 0.7,
+                "f1": 0.7368
+              },
+              {
+                "label": "Joint pain",
+                "support": 20,
+                "precision": 1.0,
+                "recall": 0.6,
+                "f1": 0.75
+              },
+              {
+                "label": "Hard to breath",
+                "support": 20,
+                "precision": 0.8235,
+                "recall": 0.7,
+                "f1": 0.7568
+              },
+              {
+                "label": "Body feels weak",
+                "support": 20,
+                "precision": 0.6667,
+                "recall": 0.9,
+                "f1": 0.766
+              },
+              {
+                "label": "Stomach ache",
+                "support": 20,
+                "precision": 0.7083,
+                "recall": 0.85,
+                "f1": 0.7727
+              }
+            ]
+          },
+          "zero_shot": {
+            "prediction_rows": 500,
+            "accuracy": 0.836,
+            "accuracy_ci_95": {
+              "lower": 0.798,
+              "upper": 0.866
+            },
+            "macro_precision": 0.8505,
+            "macro_recall": 0.836,
+            "macro_f1": 0.8344,
+            "macro_f1_ci_95": {
+              "lower": 0.797,
+              "upper": 0.8612
+            },
+            "top_3_accuracy": 0.934,
+            "average_confidence": 0.8459,
+            "human_review_rate": 0.104,
+            "auto_accept_rate": 0.896,
+            "auto_accept_accuracy": 0.8795,
+            "high_risk_review_rate": 0.06,
+            "estimated_chat_cost": 0.770626,
+            "estimated_total_cost_if_run_alone": 0.826259,
+            "worst_labels_by_f1": [
+              {
+                "label": "Injury from sports",
+                "support": 20,
+                "precision": 0.5909,
+                "recall": 0.65,
+                "f1": 0.619
+              },
+              {
+                "label": "Hard to breath",
+                "support": 20,
+                "precision": 0.6364,
+                "recall": 0.7,
+                "f1": 0.6667
+              },
+              {
+                "label": "Joint pain",
+                "support": 20,
+                "precision": 0.8462,
+                "recall": 0.55,
+                "f1": 0.6667
+              },
+              {
+                "label": "Internal pain",
+                "support": 20,
+                "precision": 0.8125,
+                "recall": 0.65,
+                "f1": 0.7222
+              },
+              {
+                "label": "Cough",
+                "support": 20,
+                "precision": 0.9231,
+                "recall": 0.6,
+                "f1": 0.7273
+              }
+            ]
+          }
+        },
+        "estimated_total_chat_cost": 1.609467,
+        "estimated_total_cost_for_this_run": 1.6651,
+        "stt_model": "openai/whisper-large-v3-turbo",
+        "extraction_model": "anthropic/claude-haiku-4.5",
+        "artifact_files": {
+          "zero_shot": {
+            "confusion_matrix_csv": "confusion_matrix_zero_shot.csv",
+            "confusion_matrix_html": "confusion_matrix_zero_shot.html",
+            "per_class_metrics_json": "per_class_metrics_zero_shot.json",
+            "per_class_metrics_csv": "per_class_metrics_zero_shot.csv",
+            "subgroup_metrics_json": "subgroup_metrics_zero_shot.json",
+            "subgroup_metrics_csv": "subgroup_metrics_zero_shot.csv",
+            "top_confusions_json": "top_confusions_zero_shot.json"
+          },
+          "few_shot": {
+            "confusion_matrix_csv": "confusion_matrix_few_shot.csv",
+            "confusion_matrix_html": "confusion_matrix_few_shot.html",
+            "per_class_metrics_json": "per_class_metrics_few_shot.json",
+            "per_class_metrics_csv": "per_class_metrics_few_shot.csv",
+            "subgroup_metrics_json": "subgroup_metrics_few_shot.json",
+            "subgroup_metrics_csv": "subgroup_metrics_few_shot.csv",
+            "top_confusions_json": "top_confusions_few_shot.json"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "generated_at_utc": "2026-05-06T06:51:26.420819+00:00",
+  "run_status": "completed",
+  "stop_reason": null,
+  "split": "validate",
+  "transcript_source": "gold",
+  "methods_evaluated": [
+    "zero_shot",
+    "few_shot"
+  ],
+  "evaluated_examples": 75,
+  "prediction_rows": 150,
+  "missing_metadata_files": [],
+  "error_count": 0,
+  "clinical_label_mode": "closed_set_csv_prompt",
+  "allowed_clinical_label_count": 25,
+  "few_shot_pool_split": "train",
+  "few_shot_k": 4,
+  "bootstrap_samples": 300,
+  "review_policy": {
+    "confidence_threshold": 0.6,
+    "high_risk_confidence_threshold": 0.8,
+    "high_risk_labels": [
+      "Blurry vision",
+      "Hard to breath",
+      "Heart hurts",
+      "Infected wound",
+      "Internal pain"
+    ]
+  },
+  "stt_summary": null,
+  "method_metrics": {
+    "few_shot": {
+      "prediction_rows": 75,
+      "accuracy": 0.96,
+      "accuracy_ci_95": {
+        "lower": 0.92,
+        "upper": 0.9867
+      },
+      "macro_precision": 0.97,
+      "macro_recall": 0.96,
+      "macro_f1": 0.9589,
+      "macro_f1_ci_95": {
+        "lower": 0.8089,
+        "upper": 0.9822
+      },
+      "top_3_accuracy": 0.9733,
+      "average_confidence": 0.8893,
+      "human_review_rate": 0.0667,
+      "auto_accept_rate": 0.9333,
+      "auto_accept_accuracy": 0.9714,
+      "high_risk_review_rate": 0.0533,
+      "estimated_chat_cost": 0.125602,
+      "estimated_total_cost_if_run_alone": 0.125602,
+      "worst_labels_by_f1": [
+        {
+          "label": "Injury from sports",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8
+        },
+        {
+          "label": "Joint pain",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8
+        },
+        {
+          "label": "Neck pain",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8
+        },
+        {
+          "label": "Body feels weak",
+          "support": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        },
+        {
+          "label": "Ear ache",
+          "support": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        }
+      ]
+    },
+    "zero_shot": {
+      "prediction_rows": 75,
+      "accuracy": 0.9333,
+      "accuracy_ci_95": {
+        "lower": 0.88,
+        "upper": 0.9867
+      },
+      "macro_precision": 0.95,
+      "macro_recall": 0.9333,
+      "macro_f1": 0.9274,
+      "macro_f1_ci_95": {
+        "lower": 0.7716,
+        "upper": 0.9596
+      },
+      "top_3_accuracy": 0.96,
+      "average_confidence": 0.8756,
+      "human_review_rate": 0.08,
+      "auto_accept_rate": 0.92,
+      "auto_accept_accuracy": 0.942,
+      "high_risk_review_rate": 0.0667,
+      "estimated_chat_cost": 0.115176,
+      "estimated_total_cost_if_run_alone": 0.115176,
+      "worst_labels_by_f1": [
+        {
+          "label": "Injury from sports",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.3333,
+          "f1": 0.5
+        },
+        {
+          "label": "Infected wound",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8
+        },
+        {
+          "label": "Joint pain",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8
+        },
+        {
+          "label": "Neck pain",
+          "support": 3,
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1": 0.8
+        },
+        {
+          "label": "Body feels weak",
+          "support": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571
+        }
+      ]
+    }
+  },
+  "estimated_total_chat_cost": 0.240778,
+  "estimated_total_cost_for_this_run": 0.240778,
+  "stt_model": null,
+  "extraction_model": "anthropic/claude-haiku-4.5",
+  "artifact_files": {
+    "zero_shot": {
+      "confusion_matrix_csv": "confusion_matrix_zero_shot.csv",
+      "confusion_matrix_html": "confusion_matrix_zero_shot.html",
+      "per_class_metrics_json": "per_class_metrics_zero_shot.json",
+      "per_class_metrics_csv": "per_class_metrics_zero_shot.csv",
+      "subgroup_metrics_json": "subgroup_metrics_zero_shot.json",
+      "subgroup_metrics_csv": "subgroup_metrics_zero_shot.csv",
+      "top_confusions_json": "top_confusions_zero_shot.json"
+    },
+    "few_shot": {
+      "confusion_matrix_csv": "confusion_matrix_few_shot.csv",
+      "confusion_matrix_html": "confusion_matrix_few_shot.html",
+      "per_class_metrics_json": "per_class_metrics_few_shot.json",
+      "per_class_metrics_csv": "per_class_metrics_few_shot.csv",
+      "subgroup_metrics_json": "subgroup_metrics_few_shot.json",
+      "subgroup_metrics_csv": "subgroup_metrics_few_shot.csv",
+      "top_confusions_json": "top_confusions_few_shot.json"
+    }
+  }
+}

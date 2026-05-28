@@ -1,0 +1,77 @@
+[
+  {
+    "ground_truth_label": "Internal pain",
+    "predicted_label": "Stomach ache",
+    "count": 5
+  },
+  {
+    "ground_truth_label": "Body feels weak",
+    "predicted_label": "Internal pain",
+    "count": 3
+  },
+  {
+    "ground_truth_label": "Cough",
+    "predicted_label": "Hard to breath",
+    "count": 3
+  },
+  {
+    "ground_truth_label": "Injury from sports",
+    "predicted_label": "Shoulder pain",
+    "count": 3
+  },
+  {
+    "ground_truth_label": "Infected wound",
+    "predicted_label": "Open wound",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Internal pain",
+    "predicted_label": "Hard to breath",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Joint pain",
+    "predicted_label": "Body feels weak",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Joint pain",
+    "predicted_label": "Knee pain",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Muscle pain",
+    "predicted_label": "Back pain",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Muscle pain",
+    "predicted_label": "Shoulder pain",
+    "count": 2
+  },
+  {
+    "ground_truth_label": "Hard to breath",
+    "predicted_label": "Cough",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Heart hurts",
+    "predicted_label": "Internal pain",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Infected wound",
+    "predicted_label": "Injury from sports",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Internal pain",
+    "predicted_label": "Head ache",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Joint pain",
+    "predicted_label": "Shoulder pain",
+    "count": 1
+  }
+]

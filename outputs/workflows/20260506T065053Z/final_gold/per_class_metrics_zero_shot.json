@@ -1,0 +1,177 @@
+[
+  {
+    "label": "Acne",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  {
+    "label": "Back pain",
+    "support": 20,
+    "precision": 0.9091,
+    "recall": 1.0,
+    "f1": 0.9524
+  },
+  {
+    "label": "Blurry vision",
+    "support": 20,
+    "precision": 0.9524,
+    "recall": 1.0,
+    "f1": 0.9756
+  },
+  {
+    "label": "Body feels weak",
+    "support": 20,
+    "precision": 0.8095,
+    "recall": 0.85,
+    "f1": 0.8293
+  },
+  {
+    "label": "Cough",
+    "support": 20,
+    "precision": 0.9412,
+    "recall": 0.8,
+    "f1": 0.8649
+  },
+  {
+    "label": "Ear ache",
+    "support": 20,
+    "precision": 0.9524,
+    "recall": 1.0,
+    "f1": 0.9756
+  },
+  {
+    "label": "Emotional pain",
+    "support": 20,
+    "precision": 0.9524,
+    "recall": 1.0,
+    "f1": 0.9756
+  },
+  {
+    "label": "Feeling cold",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 0.95,
+    "f1": 0.9744
+  },
+  {
+    "label": "Feeling dizzy",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  {
+    "label": "Foot ache",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  {
+    "label": "Hair falling out",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  {
+    "label": "Hard to breath",
+    "support": 20,
+    "precision": 0.7391,
+    "recall": 0.85,
+    "f1": 0.7907
+  },
+  {
+    "label": "Head ache",
+    "support": 20,
+    "precision": 0.95,
+    "recall": 0.95,
+    "f1": 0.95
+  },
+  {
+    "label": "Heart hurts",
+    "support": 20,
+    "precision": 0.9048,
+    "recall": 0.95,
+    "f1": 0.9268
+  },
+  {
+    "label": "Infected wound",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 0.85,
+    "f1": 0.9189
+  },
+  {
+    "label": "Injury from sports",
+    "support": 20,
+    "precision": 0.7727,
+    "recall": 0.85,
+    "f1": 0.8095
+  },
+  {
+    "label": "Internal pain",
+    "support": 20,
+    "precision": 0.7333,
+    "recall": 0.55,
+    "f1": 0.6286
+  },
+  {
+    "label": "Joint pain",
+    "support": 20,
+    "precision": 0.9333,
+    "recall": 0.7,
+    "f1": 0.8
+  },
+  {
+    "label": "Knee pain",
+    "support": 20,
+    "precision": 0.8571,
+    "recall": 0.9,
+    "f1": 0.878
+  },
+  {
+    "label": "Muscle pain",
+    "support": 20,
+    "precision": 0.9,
+    "recall": 0.45,
+    "f1": 0.6
+  },
+  {
+    "label": "Neck pain",
+    "support": 20,
+    "precision": 0.8636,
+    "recall": 0.95,
+    "f1": 0.9048
+  },
+  {
+    "label": "Open wound",
+    "support": 20,
+    "precision": 0.8696,
+    "recall": 1.0,
+    "f1": 0.9302
+  },
+  {
+    "label": "Shoulder pain",
+    "support": 20,
+    "precision": 0.6923,
+    "recall": 0.9,
+    "f1": 0.7826
+  },
+  {
+    "label": "Skin issue",
+    "support": 20,
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1": 0.9474
+  },
+  {
+    "label": "Stomach ache",
+    "support": 20,
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1": 0.8889
+  }
+]

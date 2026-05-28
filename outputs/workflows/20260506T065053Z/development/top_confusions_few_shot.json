@@ -1,0 +1,17 @@
+[
+  {
+    "ground_truth_label": "Injury from sports",
+    "predicted_label": "Shoulder pain",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Joint pain",
+    "predicted_label": "Body feels weak",
+    "count": 1
+  },
+  {
+    "ground_truth_label": "Neck pain",
+    "predicted_label": "Ear ache",
+    "count": 1
+  }
+]

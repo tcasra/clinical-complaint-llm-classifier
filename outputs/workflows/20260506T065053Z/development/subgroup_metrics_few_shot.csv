@@ -1,0 +1,5 @@
+field,value,count,accuracy,macro_f1,top_3_accuracy,human_review_rate,auto_accept_accuracy
+background_noise_audible,light_noise,58,0.9828,0.9863,0.9828,0.069,1.0
+background_noise_audible,no_noise,17,0.8824,0.4187,0.9412,0.0588,0.875
+audio_clipping,no_clipping,75,0.96,0.9589,0.9733,0.0667,0.9714
+quiet_speaker,audible_speaker,75,0.96,0.9589,0.9733,0.0667,0.9714

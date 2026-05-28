@@ -1,0 +1,178 @@
+{
+  "generated_at_utc": "2026-05-06T06:54:50.173538+00:00",
+  "run_status": "completed",
+  "stop_reason": null,
+  "split": "test",
+  "transcript_source": "gold",
+  "methods_evaluated": [
+    "zero_shot",
+    "few_shot"
+  ],
+  "evaluated_examples": 500,
+  "prediction_rows": 1000,
+  "missing_metadata_files": [],
+  "error_count": 0,
+  "clinical_label_mode": "closed_set_csv_prompt",
+  "allowed_clinical_label_count": 25,
+  "few_shot_pool_split": "train",
+  "few_shot_k": 4,
+  "bootstrap_samples": 300,
+  "review_policy": {
+    "confidence_threshold": 0.6,
+    "high_risk_confidence_threshold": 0.8,
+    "high_risk_labels": [
+      "Blurry vision",
+      "Hard to breath",
+      "Heart hurts",
+      "Infected wound",
+      "Internal pain"
+    ]
+  },
+  "stt_summary": null,
+  "method_metrics": {
+    "few_shot": {
+      "prediction_rows": 500,
+      "accuracy": 0.924,
+      "accuracy_ci_95": {
+        "lower": 0.902,
+        "upper": 0.946
+      },
+      "macro_precision": 0.9291,
+      "macro_recall": 0.924,
+      "macro_f1": 0.9231,
+      "macro_f1_ci_95": {
+        "lower": 0.8986,
+        "upper": 0.9437
+      },
+      "top_3_accuracy": 0.982,
+      "average_confidence": 0.9042,
+      "human_review_rate": 0.042,
+      "auto_accept_rate": 0.958,
+      "auto_accept_accuracy": 0.9374,
+      "high_risk_review_rate": 0.038,
+      "estimated_chat_cost": 0.840492,
+      "estimated_total_cost_if_run_alone": 0.840492,
+      "worst_labels_by_f1": [
+        {
+          "label": "Internal pain",
+          "support": 20,
+          "precision": 0.7059,
+          "recall": 0.6,
+          "f1": 0.6486
+        },
+        {
+          "label": "Shoulder pain",
+          "support": 20,
+          "precision": 0.76,
+          "recall": 0.95,
+          "f1": 0.8444
+        },
+        {
+          "label": "Joint pain",
+          "support": 20,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        {
+          "label": "Muscle pain",
+          "support": 20,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571
+        },
+        {
+          "label": "Hard to breath",
+          "support": 20,
+          "precision": 0.7917,
+          "recall": 0.95,
+          "f1": 0.8636
+        }
+      ]
+    },
+    "zero_shot": {
+      "prediction_rows": 500,
+      "accuracy": 0.896,
+      "accuracy_ci_95": {
+        "lower": 0.87,
+        "upper": 0.918
+      },
+      "macro_precision": 0.9013,
+      "macro_recall": 0.896,
+      "macro_f1": 0.8922,
+      "macro_f1_ci_95": {
+        "lower": 0.8633,
+        "upper": 0.9129
+      },
+      "top_3_accuracy": 0.968,
+      "average_confidence": 0.8776,
+      "human_review_rate": 0.064,
+      "auto_accept_rate": 0.936,
+      "auto_accept_accuracy": 0.9167,
+      "high_risk_review_rate": 0.058,
+      "estimated_chat_cost": 0.771179,
+      "estimated_total_cost_if_run_alone": 0.771179,
+      "worst_labels_by_f1": [
+        {
+          "label": "Muscle pain",
+          "support": 20,
+          "precision": 0.9,
+          "recall": 0.45,
+          "f1": 0.6
+        },
+        {
+          "label": "Internal pain",
+          "support": 20,
+          "precision": 0.7333,
+          "recall": 0.55,
+          "f1": 0.6286
+        },
+        {
+          "label": "Shoulder pain",
+          "support": 20,
+          "precision": 0.6923,
+          "recall": 0.9,
+          "f1": 0.7826
+        },
+        {
+          "label": "Hard to breath",
+          "support": 20,
+          "precision": 0.7391,
+          "recall": 0.85,
+          "f1": 0.7907
+        },
+        {
+          "label": "Joint pain",
+          "support": 20,
+          "precision": 0.9333,
+          "recall": 0.7,
+          "f1": 0.8
+        }
+      ]
+    }
+  },
+  "estimated_total_chat_cost": 1.611671,
+  "estimated_total_cost_for_this_run": 1.611671,
+  "stt_model": null,
+  "extraction_model": "anthropic/claude-haiku-4.5",
+  "artifact_files": {
+    "zero_shot": {
+      "confusion_matrix_csv": "confusion_matrix_zero_shot.csv",
+      "confusion_matrix_html": "confusion_matrix_zero_shot.html",
+      "per_class_metrics_json": "per_class_metrics_zero_shot.json",
+      "per_class_metrics_csv": "per_class_metrics_zero_shot.csv",
+      "subgroup_metrics_json": "subgroup_metrics_zero_shot.json",
+      "subgroup_metrics_csv": "subgroup_metrics_zero_shot.csv",
+      "top_confusions_json": "top_confusions_zero_shot.json"
+    },
+    "few_shot": {
+      "confusion_matrix_csv": "confusion_matrix_few_shot.csv",
+      "confusion_matrix_html": "confusion_matrix_few_shot.html",
+      "per_class_metrics_json": "per_class_metrics_few_shot.json",
+      "per_class_metrics_csv": "per_class_metrics_few_shot.csv",
+      "subgroup_metrics_json": "subgroup_metrics_few_shot.json",
+      "subgroup_metrics_csv": "subgroup_metrics_few_shot.csv",
+      "top_confusions_json": "top_confusions_few_shot.json"
+    }
+  }
+}

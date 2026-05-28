@@ -1,0 +1,26 @@
+label,support,precision,recall,f1
+Acne,20,1.0,0.85,0.9189
+Back pain,20,0.8696,1.0,0.9302
+Blurry vision,20,1.0,0.9,0.9474
+Body feels weak,20,0.6552,0.95,0.7755
+Cough,20,0.9231,0.6,0.7273
+Ear ache,20,0.9524,1.0,0.9756
+Emotional pain,20,0.6429,0.9,0.75
+Feeling cold,20,1.0,1.0,1.0
+Feeling dizzy,20,0.9048,0.95,0.9268
+Foot ache,20,0.8824,0.75,0.8108
+Hair falling out,20,0.9524,1.0,0.9756
+Hard to breath,20,0.6364,0.7,0.6667
+Head ache,20,0.8636,0.95,0.9048
+Heart hurts,20,0.8333,0.75,0.7895
+Infected wound,20,0.9286,0.65,0.7647
+Injury from sports,20,0.5909,0.65,0.619
+Internal pain,20,0.8125,0.65,0.7222
+Joint pain,20,0.8462,0.55,0.6667
+Knee pain,20,0.8261,0.95,0.8837
+Muscle pain,20,1.0,0.7,0.8235
+Neck pain,20,0.95,0.95,0.95
+Open wound,20,0.7826,0.9,0.8372
+Shoulder pain,20,0.8,0.8,0.8
+Skin issue,20,0.85,0.85,0.85
+Stomach ache,20,0.76,0.95,0.8444
